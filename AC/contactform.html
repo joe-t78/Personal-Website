@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .right_side{
+            float: right;
+            background-color: rgb(0, 0, 0);
+            color: aquamarine;
+            border: 10px solid black;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            width: 40%;
+        }
+        .left_side{
+            float:left;
+            width: 50%;
+            height: 100%;
+            background-color: aquamarine;
+            border: 10px solid black;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .content{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: auto;
+            width: 75%; 
+            display: block;
+            place-items: center;
+        }
+        button{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+            border:1px solid black;
+            border-radius: 100px;
+            margin: auto;
+            width: 25%; 
+            background-color:aquamarine;
+            display: block;
+        }
+        button:hover{
+            background-color: rgb(0, 183, 255);
+        }
+        h1{
+            text-align: center;
+        }
+
+        @media screen and (max-width:1215px) and (min-width:578px),screen and (max-width:578px) {
+            .right_side,.left_side{
+                float: none;
+            }
+        @media screen and (max-width:1215px) and (min-width:578px),screen and (max-width:578px) {
+            .left_side{
+                float: none;
+                width: 100%;
+            }
+        @media screen and (max-width:578px){
+            button{
+                font-size: 7px;
+            }
+        }
+        
+        }
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="content">
+    <div class="left_side">
+    <h1>Write Us</h1>
+    <form>
+        <p><input type="text" name="name" id="name" placeholder="Your Name" required></p>
+        <p><input type="email" name="email" id="name" placeholder="Your e-mail" required></p>
+        <p><textarea rows="10" cols="40" placeholder="Your Message" required></textarea></p>
+        <button>Submit</button>
+    </form>
+    </div>
+    <div class="right_side">
+        <h1>Contact Us</h1>
+        <p><b>E-mail:</b></p><p>info@suubo.io</p>
+        <p><b>Phone:</b></p><p>1800-851-7910</p>
+        <p><b>Address:</b></p><p>600 Congress Ave,<br>
+            Floor 14<br>
+            Austin TX 78701
+        </p>
+    </div>
+    </div>
+</body>
+</html>
